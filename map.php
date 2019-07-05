@@ -13,7 +13,7 @@ $font = "font\CALISTB.ttf";
 $width = imagesx($img);
 $height = imagesy($img);
 
-// THE TEXT SIZEตัวเลข
+// THE TEXT SIZEตัวเลขบิบ4 ตัว
 $text_size = imagettfbbox(185, 0, $font, $txt);
 $text_width = max([$text_size[2], $text_size[4]]) - min([$text_size[0], $text_size[6]]);
 $text_height = max([$text_size[5], $text_size[7]]) - min([$text_size[1], $text_size[3]]);
@@ -25,7 +25,7 @@ $centerY = CEIL(($height - $text_height));
 $centerY = $centerY<0 ? 0 : $centerY;
 imagettftext($img, 185, 0, 398, 400, $white, $font, $txt);
 
-// text ชื่อ
+// text ชื่อนังวิ่ง
 $text_size = imagettfbbox(30, 0 , $font , $text);
 $text_width =$text_size[0] + (1300/2) - ($text_size[4]/2);
 $text_height =$text_size[1] + (1300/2) - ($text_size[5]/2);
